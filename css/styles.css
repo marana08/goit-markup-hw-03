@@ -191,11 +191,12 @@ img{
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
   border: 0;
-  white-space: nowrap; 
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .services-list{
@@ -228,6 +229,7 @@ img{
 
 .team{
   background: var(--cloud-color);
+  padding: 120px 0;
 }
 
 .section-title{
@@ -238,17 +240,28 @@ img{
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue-color);
+  margin-bottom: 72px;
 }
 
 .team-list{
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-items: center;
+  display: flex;
+  gap: 24px;
 }
 
 .team-item{
   background: var(--white-color);
+  width: calc((100% - 3 * 24px) / 4);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
+.team-photo{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .team-name{
   font-weight: 500;
@@ -257,6 +270,7 @@ img{
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 }
 
 .team-role{
@@ -266,6 +280,10 @@ img{
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate-color);
+}
+
+.team-info {
+  padding: 32px 0;
 }
 
  /*our portfolio*/ 
