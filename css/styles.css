@@ -171,6 +171,7 @@ img{
   color: var(--white-color);
   cursor: pointer;
   margin: 0 auto; 
+  margin-top: 48px;
 }
 
 .hero-button:hover,
@@ -202,6 +203,7 @@ img{
 .services-list{
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .service-item{
@@ -246,6 +248,7 @@ img{
 .team-list{
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .team-item{
@@ -286,41 +289,74 @@ img{
   padding: 32px 0;
 }
 
- /*our portfolio*/ 
+/* our portfolio */
+.portfolio {
+  padding: 120px 0;
+}
 
-.section-title{
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--navy-blue-color); 
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
 }
 
-.portfolio-list{
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.portfolio-item{
-  background: var(--white-color);
+.portfolio-item {
+  background-color: var(--white-color);
   overflow: hidden;
+  width: calc((100% - 48px) / 3);
 }
- 
-.portfolio-name{
+
+.portfolio-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+  gap: 8px;
+}
+
+.portfolio-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
-.portfolio-category{
+.portfolio-category {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  margin: 0;
 }
 
 /*footer*/
