@@ -363,6 +363,7 @@ img{
 
 .footer{
   background: var(--navy-blue-color);
+  padding: 100px 0;
 
 }
 
@@ -374,6 +375,13 @@ img{
   text-transform: uppercase;
   color: var(--iris-color);
   font-family: var(--second-family);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
   
 .footer-logo-accent{
@@ -392,4 +400,5 @@ img{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud-color);
+  max-width: 264px
 }
