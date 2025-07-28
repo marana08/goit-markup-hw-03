@@ -197,6 +197,7 @@ img{
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .services-list{
@@ -205,7 +206,7 @@ img{
 }
 
 .service-item{
-  flex-basis: calc((100% - 72px) / 4); 
+  flex-basis: calc( (100% - 72px) / 4); 
 }
 
 .service-title{
@@ -255,6 +256,7 @@ img{
   display: flex;
   flex-direction: column;
   border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
 .team-photo{
@@ -314,6 +316,7 @@ img{
 
 .portfolio-item {
   background-color: var(--white-color);
+  overflow: hidden;
   width: calc((100% - 48px) / 3);
 }
 
