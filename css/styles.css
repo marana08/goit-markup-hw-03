@@ -205,12 +205,8 @@ img{
   gap: 24px;
 }
 
-/*.service-item {
+.service-item {
   flex-basis: calc((100% - 72px) / 4);
-}*/
-
-.service-item:first-child {
-  width: calc((100% - 72px) / 4);
 }
 
 .service-title{
