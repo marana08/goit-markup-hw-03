@@ -18,6 +18,10 @@ ul, li{
   list-style-type: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 ul{
   margin: 0;
   padding-left: 0;
@@ -89,6 +93,7 @@ img{
   flex-direction: row;
   gap: 0px;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .logo-accents{
@@ -110,6 +115,7 @@ img{
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
   padding: 24px 0;
+  display: block;
   }
 
 .nav-link:hover,
@@ -135,6 +141,8 @@ img{
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  padding: 24px 0;
+  display: block;
 }
 
 .contact-link:hover,
